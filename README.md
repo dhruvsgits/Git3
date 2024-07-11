@@ -74,3 +74,91 @@ In this way of merging an branch with main by pulling request file changed and o
 Here are the screenshot of changes :![alt text](<ss change1.jpg>) ,![alt text](<ss change2.jpg>), ![alt text](<ss change3.jpg>)   <br>
 Command used : 1.git checkout -b branchname = It create new branch <br>
                2.push origin feature = it will push commited changes from local to remote repository.<br>
+               <br>
+               <br>
+               <br>
+               <br>
+Assigment Questions: <br>
+1.Why do we create branches in a repository and why do we create pull requests instead of merging directly?<br>
+<br>
+Ans.Branches:<br>
+
+Use Case: To develop features, fix bugs, or experiment in isolation from the main codebase.<br>
+Reason: Prevents unstable code from affecting the main branch; facilitates parallel development.<br>
+Pull Requests:<br>
+
+Use Case: Code review, collaboration, and ensuring quality before merging into the main branch.<br>
+Reason: Allows team members to review changes, discuss improvements, and approve before merging, ensuring code quality and consistency.  <br>
+<br>
+<br>
+2.What is the difference between git add . and git add <filename>? What will we use when we have changes in multiple files but we are not required to add some files?<br>
+Ans.git add .:<br>
+
+Use Case: Adds all changes in the current directory and its subdirectories to the staging area.<br>
+Reason: Useful for quickly staging all changes when you know all are relevant.<br>
+*git add <filename>:<br>
+
+Use Case: Adds changes from a specific file to the staging area.<br>
+Reason: Useful for selectively staging changes.<br>
+*Selective Addition:<br>
+
+Use Case: When changes in multiple files exist but some should not be added.<br>
+Solution: Use git add <filename> for each relevant file or git add -p to interactively select changes.<br>
+<br>
+<br>
+3.What is the difference between git fetch and git pull?<br>
+Ans.git fetch:<br>
+
+Use Case: Retrieves updates from the remote repository but does not merge them.<br>
+Reason: Allows you to review changes before merging.<br>
+*git pull:<br>
+
+Use Case: Retrieves updates from the remote repository and merges them into the current branch.<br>
+Reason: Simplifies the process of updating the local branch with the latest remote changes<br>
+<br>
+<br>
+4.What is a head in a repository and what does it do?<br>
+Ans.HEAD:<br>
+Use Case: Represents the current commit or branch you are working on.<br>
+Reason: Tracks the current position in the repository, allowing you to switch between branches and commits.<br>
+<br>
+<br>
+5.What is the .git folder in a repository?<br>
+Ans.git Folder:<br>
+Use Case: Stores all the metadata and history of the repository.<br>
+Reason: Contains essential information for Git to manage the repository, including configuration, commits, branches, and more. <br>   
+<br>
+<br>
+6.What are commit hashes and their use cases?<br>
+Ans.Commit Hashes:<br>
+Use Case: Unique identifiers for each commit in the repository.<br>
+Reason: Allow precise referencing, tracking, and management of specific changes. Useful for reverting to a specific state, cherry-picking changes, and identifying specific commits.  <br>
+<br>
+<br>
+7.Different ways of syncing a branch with origin?<br>
+Ans.1:git pull:<br>
+
+Use Case: Fetches and merges updates from the remote branch into the local branch.<br>
+Reason: Simplifies updating the local branch.<br>
+2:git fetch followed by git merge:<br>
+
+Use Case: Fetches updates without merging, then manually merges updates.<br>
+Reason: Allows review of changes before merging.<br>
+3:git rebase:<br>
+
+Use Case: Applies local commits on top of the updated remote branch.<br>
+Reason: Keeps a linear commit history.<br>
+4:git reset --hard origin/<branch>:<br>
+
+Use Case: Resets the local branch to match the remote branch exactly.<br>
+Reason: Discards local changes, ensuring the local branch matches the remote state.<br>
+
+
+
+
+
+
+
+
+
+    
