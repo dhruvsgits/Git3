@@ -44,16 +44,6 @@ Command used : 1.git stash = temporarily stashes changes you have made to your w
                4.git pop = it removes or throws away the latest or the topmost stash.<br>
                <br>
                <br>
-#Solution of Scenario 5: Use of .gitignore
-
-
-
-
-
-
-
-
-
 
 #Solution of Scenario 6:Revert to Previous Commits <br>
 We will do this when You made a mistake in a recent commit and need to revert the changes. <br>
